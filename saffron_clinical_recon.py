@@ -76,7 +76,7 @@ def find_files3(file_dir,seg_dir,out_dir):
     files['mask_output'] = seg_dir
     files['masked_recon'] = file_dir + "/masked_recon/"
     # files["out"] = file_dir + "/out"
-    files["out"] = out_dir + "/out"
+    files["out"] = out_dir
     files["crop"] = file_dir + "/out/crop"
     # ph.create_directory(files["crop"])
     # ph.create_directory(os.path.dirname(files['masked_recon']))
@@ -90,13 +90,10 @@ def find_files3(file_dir,seg_dir,out_dir):
         if "seg" in path or "out" in path or "masked_recon" in path  or "bestData" in path or "results" in path :
             continue
         for file_name in file_list:
-            # if file_name.endswith(".nii.gz") and "stack" in file_name:
-            # if file_name.endswith(".nii.gz") and "head" in file_name:
-            if file_name.endswith(".nii.gz") and "ssfse" in file_name:
-            # if file_name.endswith(".nii.gz") :
+            if file_name.endswith(".nii.gz") :
                 # names = file_name.split('t2haste')
-                names = re.findall(r"\d+\_\d+",file_name)
-                # names = re.findall(r"202\d+", file_name)
+                # names = re.findall(r"\d+\_\d+",file_name)
+                names = re.findall(r"20\d+", file_name)
                 # print(file_name)
                 # name = names[0]
                 name = names[-1]
@@ -116,8 +113,8 @@ def find_files3(file_dir,seg_dir,out_dir):
         file['mask'] = []
         for file_name in file_list:
             name = file_name.split('/')[-1]
-            names = re.findall(r"\d+\_\d+",file_name)
-            # names = re.findall(r"202\d+", file_name)
+            # names = re.findall(r"\d+\_\d+",file_name)
+            names = re.findall(r"20\d+", file_name)
             # file['name'] = names[0]
             file['name'] = names[-1]
             file['img'].append(file_name)
