@@ -5,7 +5,7 @@ This is the SAFFRON
 
 ## 1.Download Pre-trained Models
 
-checkpoint/saffron_GZ_GFY.pt https://zenodo.org/record/4282679#.X7fyttvgqL5
+checkpoint/saffron_GZ_GFY.pt https://zenodo.org/records/16924473
 
 
 ## 2. brain reconstruction
