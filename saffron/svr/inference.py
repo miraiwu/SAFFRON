@@ -447,6 +447,8 @@ def run_saffron(
 
     logging.debug("time for running SVoRM: %f s" % (time.time() - time_start))
     print("time for running SVoRM: %f s" % (time.time() - time_start))
+    volume.image[volume.image<0.1] = 0
+    volume.image[volume.image>1.1] = 1.1
     return stacks_out,volume
 
 
