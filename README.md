@@ -4,8 +4,13 @@ This is the SAFFRON
 
 
 ## 1.Download Pre-trained Models
+Download the checkpoint from Zenodo (https://zenodo.org/records/16924473)
+ and place it under the checkpoint/ folder:
 
-checkpoint/saffron_GZ_GFY.pt https://zenodo.org/records/16924473
+```bash
+checkpoint/saffron_GZ_GFY.pt
+
+```
 
 ## 2.Prepare Environment
 
