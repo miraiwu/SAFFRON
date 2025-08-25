@@ -7,8 +7,21 @@ This is the SAFFRON
 
 checkpoint/saffron_GZ_GFY.pt https://zenodo.org/records/16924473
 
+## 2.Prepare Environment
 
-## 2.Prepare Data Directory
+It is recommended to use **conda**. Example:
+
+```bash
+conda create -n saffron python=3.10
+conda activate saffron
+```
+
+Install the package itself:
+```bash
+pip install -e .
+```
+
+## 3.Prepare Data Directory
 Organize your data as follows:
 ```bash
 SAFFRON/
@@ -26,6 +39,6 @@ SAFFRON/
  ├── saffron_clinical_recon.py
 ```
 
-## 3. brain reconstruction
+## 4. brain reconstruction
 
 run python saffron_clinical_recon.py
