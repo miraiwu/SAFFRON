@@ -16,14 +16,15 @@ SAFFRON/
  │    └── saffron_GZ_GFY.pt
  ├── data/
  │    └── test/
- │         ├── 20_cor_ssfse.nii.gz
- │         ├── 20_sag_ssfse.nii.gz
- │         ├── 20_tra_ssfse.nii.gz
+ │         ├── 20**_cor.nii.gz
+ │         ├── 20**_sag.nii.gz
+ │         ├── 20**_tra.nii.gz
  │         └── seg/
- │              ├── 20_cor_ssfse.nii.gz (same file name)
- │              ├── 20_sag_ssfse.nii.gz
- │              └── 20_tra_ssfse.nii.gz
+ │              ├── 20**_cor.nii.gz (same file name)
+ │              ├── 20**_sag.nii.gz
+ │              └── 20**_tra.nii.gz
  ├── saffron_clinical_recon.py
+```
 
 ## 3. brain reconstruction
 
