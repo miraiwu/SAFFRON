@@ -11,7 +11,7 @@ checkpoint/saffron_GZ_GFY.pt
 
 ```
 
-## 2.Prepare Environment
+## 2.Create Environment
 
 It is recommended to use **conda**. Example:
 
@@ -19,11 +19,22 @@ It is recommended to use **conda**. Example:
 conda create -n saffron python=3.10
 conda activate saffron
 ```
+Build CUDA 12.4 (recommended)
+```bash
+python -m pip install -U pip
+pip install --index-url https://download.pytorch.org/whl/cu124 \
+  torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1
+```
 
+Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
 Install the package itself:
 ```bash
-pip install -e .
+pip install -e . --no-deps --no-build-isolation --config-settings editable_mode=compat
 ```
+
 
 ## 3.Prepare Data Directory
 Organize your data as follows:
